@@ -1,0 +1,87 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+#wrapper {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+}
+#wrapper h1 {
+  margin-bottom: 15px;
+  opacity: .5;
+  text-align: center;
+}
+#wrapper #generate_profile_container {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+#wrapper #generate_profile_container label {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#wrapper #generate_profile_container #number_generate_profile {
+  height: 25px;
+  margin: 0 5px;
+  width: 150px;
+}
+#wrapper #generate_profile_container #generate_profile_btn,
+#wrapper #generate_profile_container #reset_btn {
+  background-color: lightgrey;
+  border-radius: 20%;
+  border: 1px solid black;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  color: black;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+#wrapper #generate_profile_container #generate_profile_btn:hover,
+#wrapper #generate_profile_container #reset_btn:hover {
+  background-color: #72e772;
+  border: 1px solid #20c020;
+  color: black;
+}
+#wrapper #new_generated_profile_container ul li {
+  align-items: center;
+  background-color: #abbec5;
+  border: 1px solid black;
+  display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 15px;
+  position: relative;
+  width: 600px;
+}
+#wrapper #new_generated_profile_container ul li.hidden {
+  display: none;
+}
+#wrapper #new_generated_profile_container ul li:hover {
+  background-color: #9bb8c4;
+}
+#wrapper #new_generated_profile_container ul li img {
+  border-radius: 50%;
+  border: 1px solid black;
+  height: 75px;
+}
+#wrapper #new_generated_profile_container ul li .profile_details {
+  width: 75%;
+}
+#wrapper #new_generated_profile_container ul li .profile_details h2 {
+  margin-bottom: 5px;
+}
+#wrapper #new_generated_profile_container ul li .close_profile_btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+#wrapper #new_generated_profile_container ul li:hover .close_profile_btn {
+  display: block;
+}
