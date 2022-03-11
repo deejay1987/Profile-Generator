@@ -3,9 +3,6 @@
   padding: 0;
 }
 #wrapper {
-  background-image: url(../images/background.jpg);
-  background-size: cover;
-  height: 100vh;
   padding: 50px;
 }
 #wrapper h1 {
@@ -30,7 +27,7 @@
 #wrapper #generate_profile_container #generate_profile_btn,
 #wrapper #generate_profile_container #reset_btn {
   background-color: lightgrey;
-  border-radius: 20%;
+  border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
   color: black;
@@ -44,22 +41,32 @@
   border: 1px solid #20c020;
   color: black;
 }
+#wrapper #new_generated_profile_container ul {
+  width: 480px;
+}
 #wrapper #new_generated_profile_container ul li {
+  /* Element properties*/
   align-items: center;
   background-color: #abbec5;
   border: 1px solid black;
+  border-radius: 5px;
   display: flex;
   list-style: none;
   margin-bottom: 10px;
   padding: 15px;
   position: relative;
-  width: 600px;
-}
-#wrapper #new_generated_profile_container ul li.hidden {
-  display: none;
+  /* Element states */
+  /* Element children */
+  /* Element media queries, if existing */
 }
 #wrapper #new_generated_profile_container ul li:hover {
   background-color: #9bb8c4;
+}
+#wrapper #new_generated_profile_container ul li:hover .remove_profile_btn {
+  display: block;
+}
+#wrapper #new_generated_profile_container ul li.hidden {
+  display: none;
 }
 #wrapper #new_generated_profile_container ul li img {
   border-radius: 50%;
@@ -67,21 +74,19 @@
   height: 75px;
 }
 #wrapper #new_generated_profile_container ul li .profile_details {
-  width: 75%;
+  flex-grow: 1;
+  margin-left: 10px;
 }
 #wrapper #new_generated_profile_container ul li .profile_details h2 {
   margin-bottom: 5px;
 }
-#wrapper #new_generated_profile_container ul li .close_profile_btn {
+#wrapper #new_generated_profile_container ul li .remove_profile_btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   display: none;
   font-size: 20px;
   position: absolute;
-  right: 20px;
+  right: 10px;
   top: 10px;
-}
-#wrapper #new_generated_profile_container ul li:hover .close_profile_btn {
-  display: block;
 }
